@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        <img src = "Ping_Pong.jpg">
+        <h3>Ping Pong Score Keeper</h3>
+        <div>
+            <p class = "tally">
+                <span id="p1Score">0</span> to <span id="p2Score">0</span> <!--make sure to remove the values from there-->
+            </p>
+            <p>Use the buttons below to keep score</p>
+            <p>
+                <form class="gcSelect">
+                    <label for = "gameCount" id="countLabel">Playing to: </label>
+                    <select id="gameCount" name="gameCount">
+                        <option value="11">11</option>
+                        <option value="22">22</option>
+                        <option value="33">33</option>
+                    </select>
+                    <!-- <button id="#choose">choose</button> -->
+                </form>
+            </p>
+            <div class = "buttons">
+                <button id="p1">+1 Player One</button>
+                <button id="p2">+1 Player Two</button>
+                <button id="reset">Reset</button>
+            </div>
+    </div>
+    </main>
+
+
+    <script src  = "score.js"></script>
+</body>
+</html>
