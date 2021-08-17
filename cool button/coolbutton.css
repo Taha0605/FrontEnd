@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(13, 8, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    /*the above 4 lines centers the content to the webpage*/
+}
+
+/*FlexBox stuff
+main axis direction- flex-direction:
+main axis elements alignment- justify-content:
+cross axis direction- flex-wrap:
+cross axis alignment- align-items:
+align-content: -this just aligns stuff in a direction other than the main axis in the wrapping
+align-self: -is only for one element
+*/
+
+button{
+    background-color: inherit;
+    color:peachpuff;
+    border: 2px solid peachpuff;
+    padding: 15px 30px;
+    /* position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    transition: 0.25s;
+}
+
+button:hover{
+    color: yellow;
+    border-color: yellow;
+    transform: translateY(-5px);
+    box-shadow: 0 0.5em 0.5em -0.4em yellow;/*horizontal vertical blur spread color*/
+}
