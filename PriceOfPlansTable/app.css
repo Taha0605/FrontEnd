@@ -1,0 +1,147 @@
+body{
+    background-color: #2874cc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    font-family: 'Open Sans', sans-serif;
+
+    /* text-shadow: 1px 1px 1px grey; */
+}
+
+div.table{
+    width:850px;
+    height: 430px;
+    background-color:white;
+    padding: 0.5em;
+    border: 3px solid white;
+    border-radius: 0.7em;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap:nowrap;
+} 
+
+div.pricing-plan{
+    width: 30%;
+    height: 430px;
+    background-color: inherit;
+    border-right: 1px solid rgba(128, 128, 128, 0.219);
+    padding:0.2rem;
+    /* padding: 0px 0.5em;
+    border: 1px solid blue; */
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.pricing-plan:nth-of-type(3){
+    border-right: 0px;
+}
+
+img{
+    width:80%;
+    height:30%;
+    padding: 10% 0% 0% 10%;
+}
+
+h2.pricing-header{
+    text-transform: uppercase;
+    color: grey;
+    text-align:center;
+}
+
+ul.pricing-features{
+    list-style-type: none;
+    color: #341dff;
+    font-weight: 10px;
+    text-transform: uppercase;
+    margin-right: 15%;
+}
+
+li.pricing-features-item{
+    font-size:smaller;
+    margin: px 20px;
+    padding: 5px 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.219);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+    text-align: center;
+
+}
+
+span.pricing-price{
+    color: #341dff;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align:center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+button.pricing-button{
+    background-color: white;
+    color:#341dff;
+    padding: 10px 20px;
+    border: 1px solid #341dff;
+    border-radius: 10px;
+
+    align-self: center;
+    transition:0.25s;
+}
+
+button.pricing-button:hover{
+    color:white;
+    background-color: #2874cc;
+}
+
+
+button.pricing-button-small{
+    color:white;
+    background-color: #2874cc;
+
+    padding: 10px 20px;
+    border: 1px solid #341dff;
+    border-radius: 10px;
+
+    align-self: center;
+    
+    transition: 0.25s;
+}
+
+button.pricing-button-small:hover{
+    background-color: white;
+    color:#341dff;
+}
+
+/*Media Query Part*/
+@media (max-width: 900px){
+
+    body{
+        align-items:flex-start;
+    }
+
+    div.table{
+        height: 1350px;
+        /* width:auto; */
+        margin-top:0px;
+        border-radius: 0%;
+
+        flex-direction: column;
+        align-items:center;
+    }
+
+    div.pricing-plan{
+        width: 255px;
+        border-right: 0px;
+        border-bottom:1px solid rgba(128, 128, 128, 0.219)
+    }
+}
